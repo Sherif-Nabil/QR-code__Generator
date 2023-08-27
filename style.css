@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F4F4F4;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decoration-svg {
+    position: absolute;
+}
+
+.svg-top {
+    top: 0;
+    left: 0;
+}
+
+.svg-bottom {
+    bottom: 0;
+    right: 0;
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Tajawal', sans-serif;
+    color: #084052;
+}
+
+.title span {
+    color: #8FCBEF;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+main::after,
+main::before {
+    content: '';
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    border-radius: 100px;
+    z-index: -1;
+    display: block;
+
+}
+
+main::before {
+    bottom: -10%;
+    left: -10%;
+    background-color: #9FC6D7;
+}
+
+main::after {
+    top: -10%;
+    right: -10%;
+    background-color: #ABB5DF;
+
+}
+
+.app {
+    border-radius: 10px;
+    padding: 13px;
+    display: flex;
+    gap: 13px;
+
+    font-family: 'Tajawal', sans-serif;
+    background-color: rgba(2555, 255, 255, 0.7);
+    box-shadow: 0px 8px 97px 0px rgba(0, 0, 0, 0.05);
+
+    backdrop-filter: blur(8px);
+    transition: width ease-in-out 0.5s;
+
+}
+
+section {
+    border-radius: 10px;
+    height: 330px;
+}
+
+.app__info-card {
+    width: 546px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #EBEFFC 0%, rgba(135, 199, 219, 0.15) 100%);
+    box-shadow: 0px 0px 19.52513885498047px 0px rgba(0, 0, 0, 0.05) inset;
+
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-container label {
+    color: #084052;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.info-card__website-link,
+.info-card__size {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px #9EC5D6;
+    padding: 8px 20px;
+    font-family: 'Tajawal', sans-serif;
+    color: #084052;
+    font-weight: 700;
+    font-size: 16px;
+    transition: box-shadow ease-in-out 0.3s;
+}
+
+.info-card__website-link:focus {
+    box-shadow: 0 0 0 3px #81a7b7;
+}
+
+.info-card__website-link::placeholder {
+    color: rgba(128, 128, 128, 0.634);
+}
+
+.info-container div {
+    display: flex;
+    gap: 8px;
+}
+
+.info-card__size,
+.info-card__button {
+    width: 50%;
+}
+
+.info-card__button {
+    border-radius: 10px;
+    background: #AAB4DD;
+    color: #314188;
+    font-family: 'Tajawal', sans-serif;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.info-card__button:hover {
+    background: #858fb6;
+    color: #dfe5ff;
+}
+
+.info-card__button:focus {
+    box-shadow: 0 0 0 2px #314188;
+}
+.info-container--flex-row{
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+.info__darck-background{
+    height: 20px;
+    width: 20px;
+    accent-color: rgb(73, 97, 183);
+}
+label[for=info__darck-background]{
+    cursor: pointer;
+}
+
+.app__qr-code {
+    width: 274px;
+    background-color: #084052;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.app__qr-code--hide {
+    display: none;
+}
+
+.qr-code__image {
+    width: 100%;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.qr-code__image * {
+    width: 100%;
+    height: 100%;
+}
+
+.qr-code__button {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #035a75;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Tajawal', sans-serif;
+    color: #B7E4FF;
+    cursor: pointer;
+}
+
+.qr-code__button:hover {
+    background-color: #10495b;
+}
