@@ -12,6 +12,7 @@ genetateButton.addEventListener('click', (e) => {
 
     //empty the qrCodeImage
     qrCodeImage.innerHTML = '';
+    qrCodeContainer.classList.add('app__qr-code--hide');
 
     if (inputLink.value == '') {
         window.alert('Please enter the link');
@@ -26,7 +27,7 @@ genetateButton.addEventListener('click', (e) => {
             colorLight: inputCheckBox.checked?"#000000":"#ffffff"
         });
 
-        qrCodeContainer.classList.remove('app__qr-code--hide')
+        qrCodeContainer.classList.remove('app__qr-code--hide');
     }
 
 })
